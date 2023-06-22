@@ -1,4 +1,5 @@
 import requests
 
-response = requests.get('https://localhost:5000', verify='cert.pem', headers={'Host': 'localhost'})
+response = requests.get('https://localhost:5000', verify='root.crt')
+
 print(response.text)
